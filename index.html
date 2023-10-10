@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> KALKULATOR KONVERSI SUHU </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+        <body>
+            <h1> CELCIUS & FAHRENHEIT CONVERSION </h1>
+            <div class="div">
+            <p><b> CONVERSION INPUT </b></p>
+            
+            <input type="number" id="input" placeholder=" INPUT YOUR TEMPERATURE VALUE HERE "><br>
+
+            <button onclick="konversi()"><b> Celcius - Fahrenheit Conversion </b></button> 
+            <button onclick="reset()"><b> Reset </b></button> 
+            <button onclick="reverse()"><b> Fahrenheit - Celcius Conversion </b></button>
+
+            <p id="error-input" class="error"></p>
+            <p class="margin">
+             <p><b> TEMPERATURE CONVERTION RESULT </b></p>
+             <div class="div1" id="result"></div>
+
+             <p><b> EXPLANATION </b></p>
+             <div class="div1" id="calculation"></div>
+            </p>
+
+            </div>
+            <script src="js/script.js"></script>
+        </body>
+</html>
