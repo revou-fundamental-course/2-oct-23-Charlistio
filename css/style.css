@@ -1,7 +1,7 @@
 .div {
     width: 1000px;
     height: 1000px;
-    background: linear-gradient(lightgreen,purple);
+    background-color: lightblue;
     color:white;
     text-align: center;
     line-height: 100px;
@@ -9,7 +9,7 @@
 }
 h1 {
     font-family: Helvetica;
-    background: linear-gradient(green,yellow);
+    background-color: lightgreen;
     color: white;
     height: 100px;
     display: flex;
@@ -59,8 +59,9 @@ div {
     margin: 20px auto;
 }
 
-.div1 {
+.tampilan {
     border-radius: 10px;
     border: 2px solid black;
     margin: 0 auto;
+    height: 100px;
 }
