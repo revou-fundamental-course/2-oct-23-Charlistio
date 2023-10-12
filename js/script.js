@@ -2,7 +2,7 @@
 function konversi() {
     var celcius = parseFloat(document.getElementById("input").value);
     if (isNaN(celcius)){
-        document.getElementById("error-input").innerText= "PLEASE INPUT YOUR VALUE FIRST !"
+        document.getElementById("error-input").innerText= " INVALID INPUT !"
 
     } else if (celcius == 0) {
     var fahrenheit = (celcius * 9/5) + 32;
@@ -28,7 +28,7 @@ function reset() {
 function reverse() {
     var fahrenheit = parseFloat(document.getElementById("input").value);
     if (isNaN(fahrenheit)) {
-        document.getElementById("error-input").innerText=" PLEASE INPUT YOUR VALUE FIRST ! "
+        document.getElementById("error-input").innerText=" INVALID INPUT ! "
     } else if (fahrenheit == 0) {
     var celcius = (fahrenheit - 32) * 5/9;
     document.getElementById("result").innerHTML = celcius.toFixed(2) + " Celcius.";
