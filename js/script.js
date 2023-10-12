@@ -4,12 +4,6 @@ function konversi() {
     if (isNaN(celcius)){
         document.getElementById("error-input").innerText= " INVALID INPUT !"
 
-    } else if (celcius == 0) {
-    var fahrenheit = (celcius * 9/5) + 32;
-    document.getElementById("result").innerHTML = fahrenheit.toFixed(2) + " Fahrenheit.";
-    document.getElementById("calculation").innerHTML = " CALCULATION PROCESS : " + celcius +"°C * (9/5) + 32 = " + fahrenheit.toFixed(2) +"°F";
-    document.getElementById("error-input").innerText=" "
-
     } else {
     document.getElementById("error-input").innerText=" "
     var fahrenheit = (celcius * 9/5) + 32;
@@ -29,11 +23,6 @@ function reverse() {
     var fahrenheit = parseFloat(document.getElementById("input").value);
     if (isNaN(fahrenheit)) {
         document.getElementById("error-input").innerText=" INVALID INPUT ! "
-    } else if (fahrenheit == 0) {
-    var celcius = (fahrenheit - 32) * 5/9;
-    document.getElementById("result").innerHTML = celcius.toFixed(2) + " Celcius.";
-    document.getElementById("calculation").innerHTML = " CALCULATION PROCESS : (" + fahrenheit +"°F -32) * (9/5) = " + celcius.toFixed(2) +"°C";
-    document.getElementById("error-input").innerText=" "
     } else {
     document.getElementById("error-input").innerText=" "
     var celcius = (fahrenheit - 32) * 5/9;
